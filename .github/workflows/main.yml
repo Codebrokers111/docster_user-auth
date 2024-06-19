@@ -25,7 +25,7 @@ jobs:
         passphrase: ${{secrets.SSH_PASSPHRASE}}
         port: 22
         script: |
-          cd docschat/docster_user-auth
-          git add --all
-          git commit -m "commit"
-          git push
+          cd docschat/docster_user-auth/docster_user-auth
+          git pull origin main
+          git status
+          npm install --only=prod
