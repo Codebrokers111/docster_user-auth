@@ -29,7 +29,6 @@ router.post('/giveaccess',[
         success=true
         res.json({success,user})
     }catch(err){
-        console.error(err.message)
         res.status(500).send("Some Error Occured")
     }
 })
