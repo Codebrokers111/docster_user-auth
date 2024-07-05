@@ -10,7 +10,6 @@ require('dotenv').config()
 
 
 const JWT_SECRET = process.env.REACT_APP_JWTS
-console.log(JWT_SECRET)
 
 router.post('/existuser',async(req,res)=>{
     let success = true;
